@@ -1,0 +1,9 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.16.1
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Fri Aug 16 07:51:27 2024"
+  rime_version: 1.11.2
+patch:
+  __include: "hot_keys:/patch"
+  "style/color_scheme": win11dark
