@@ -26,6 +26,7 @@ build/
 
 # 忽略本地安装信息
 installation.yaml
+user.yaml
 
 # 忽略用户数据库文件
 *.userdb/
