@@ -4,14 +4,8 @@
 # 保留 .gitignore 本身
 !.gitignore
 
-# 保留所有方案文件 (schema)
-!*.schema.yaml
-
-# 保留所有自定义配置文件 (custom)
-!*.custom.yaml
-
-# 保留所有词典文件 (dict)
-!*.dict.yaml
+# 保留所有配置文件
+!*.yaml
 
 # 保留用户词库文本文件
 # !userphrase.txt
@@ -52,3 +46,4 @@ rime.*.bin
 
 # 保留方案需要的字体
 !字体支持.7z
+
