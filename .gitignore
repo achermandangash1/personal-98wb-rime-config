@@ -1,49 +1,12 @@
-# 忽略所有文件
-*
 
-# 保留 .gitignore 本身
-!.gitignore
-
-# 保留所有配置文件
-!*.yaml
-
-# 保留用户词库文本文件
-# !userphrase.txt
-# !*.txt
-
-# 保留 Lua 脚本
-!rime.lua
-!lua/
-!lua/**
-
-
-# 保留图片资源
-!icons/
-!icons/**
-
-# 忽略 build 目录（编译生成的文件）
 build/
+build/**
 
-# 忽略本地安装信息
+
 installation.yaml
 user.yaml
 
-# 忽略用户数据库文件
-*.userdb/
-*.userdb.txt
-*.userdb.kct*
 
-# 忽略同步文件夹
-sync/
+*.txt
 
-# 忽略日志文件
-*.log
-rime.*.bin
-
-# 忽略备份文件
-*.bak
-*~
-
-# 保留方案需要的字体
-!字体支持.7z
-
+!hotstring.txt
