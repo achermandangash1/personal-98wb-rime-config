@@ -10,3 +10,8 @@ user.yaml
 *.txt
 
 !hotstring.txt
+
+
+[filter "rimeclean"]
+    clean = sed '/last_build_time/d'
+    smudge = cat
