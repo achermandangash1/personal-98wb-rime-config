@@ -299,11 +299,12 @@ function time_translator(input, seg)
 	local keyword = rv_var["time_var"]
 	if (input == keyword) then
 		local times = {
-			os.date("%H:%M:%S")
-			,os.date("%Y-%m-%d " .. format_Time() .. "%I:%M")
+			{ tostring(os.time()), border_began .. "UTC时间戳" .. border_end }
+			,{ os.date("%H:%M:%S"), border_began .. "时间" .. border_end }
+			,{ os.date("%Y-%m-%d " .. format_Time() .. "%I:%M"), border_began .. "时间" .. border_end }
 			}
 		for i =1,#times do
-			yield(Candidate(keyword, seg.start, seg._end, times[i], border_began .. "时间" .. border_end))
+			yield(Candidate(keyword, seg.start, seg._end, times[i][1], times[i][2]))
 		end
 		times = nil
 	end
